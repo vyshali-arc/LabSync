@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LabSync – Smart Lab Tracker</title>
+  <meta name="description" content="Track your lab experiment progress subject-wise with real-time analytics and progress rings."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ========== LANDING PAGE ========== -->
+  <div id="page-landing" class="page active">
+    <div class="landing-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="landing-content">
+      <div class="logo-wrap">
+        <div class="logo-icon">🔬</div>
+        <h1 class="app-title">Lab<span>Sync</span></h1>
+      </div>
+      <p class="tagline">Your smart lab experiment progress tracker.</p>
+      <p class="sub-tagline">Track. Organize. Ace your lab exams.</p>
+
+      <div class="card login-card">
+        <div class="login-card-inner">
+          <h2>Welcome, Student! 👋</h2>
+          <p class="card-sub">Enter your name to start or continue tracking.</p>
+          <div class="input-group">
+            <span class="input-icon">👤</span>
+            <input type="text" id="student-name-input" placeholder="Enter your full name..." autocomplete="off"/>
+          </div>
+          <button id="start-btn" class="btn btn-primary btn-glow">
+            <span>Start Tracking</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="features-row">
+        <div class="feature-pill">📊 Real-time Progress</div>
+        <div class="feature-pill">🎯 Subject Analytics</div>
+        <div class="feature-pill">⭐ Completion Badges</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== DASHBOARD PAGE ========== -->
+  <div id="page-dashboard" class="page">
+    <header class="top-bar">
+      <div class="top-bar-left">
+        <div class="logo-sm">🔬 Lab<span>Sync</span></div>
+      </div>
+      <div class="top-bar-right">
+        <div class="user-chip">
+          <span class="user-chip-icon">👤</span>
+          <span id="display-name">Student</span>
+        </div>
+        <button id="logout-btn" class="btn btn-ghost btn-sm">← Exit</button>
+      </div>
+    </header>
+
+    <main class="dashboard-main">
+      <div class="section-header">
+        <h2>Your Lab Dashboard</h2>
+        <p>Select a subject to track your experiments</p>
+      </div>
+
+      <div id="subject-cards" class="subject-grid">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="summary-section">
+        <h3>Overall Progress</h3>
+        <div id="overall-progress-bar-wrap" class="overall-bar-wrap">
+          <div class="overall-bar-track">
+            <div id="overall-progress-bar" class="overall-bar-fill" style="width:0%"></div>
+          </div>
+          <span id="overall-percent-label" class="overall-label">0%</span>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ========== TRACKER PAGE ========== -->
+  <div id="page-tracker" class="page">
+    <header class="top-bar">
+      <div class="top-bar-left">
+        <button id="back-btn" class="btn btn-ghost btn-sm">← Back</button>
+      </div>
+      <div class="top-bar-right">
+        <div class="user-chip">
+          <span class="user-chip-icon">👤</span>
+          <span id="tracker-display-name">Student</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="tracker-main">
+      <div class="tracker-hero">
+        <!-- Progress Ring -->
+        <div class="ring-container">
+          <svg class="progress-ring" viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="50"/>
+            <circle id="ring-fill" class="ring-fill" cx="60" cy="60" r="50"/>
+          </svg>
+          <div class="ring-center">
+            <span id="ring-percent">0%</span>
+            <span class="ring-label">Done</span>
+          </div>
+        </div>
+
+        <div class="tracker-info">
+          <div id="subject-badge" class="subject-badge">🖥️ OS</div>
+          <h2 id="subject-heading">Operating Systems</h2>
+          <div id="status-tag" class="status-tag status-start">🚀 Just Started</div>
+          <div id="last-updated" class="last-updated">Last updated: –</div>
+          <div id="completion-count" class="completion-count">0 / 0 completed</div>
+        </div>
+      </div>
+
+      <div class="programs-section">
+        <div class="programs-header">
+          <h3>Programs Checklist</h3>
+          <div class="header-actions">
+            <button id="select-all-btn" class="btn btn-ghost btn-sm">✅ Select All</button>
+            <button id="clear-all-btn" class="btn btn-ghost btn-sm">🗑️ Clear All</button>
+          </div>
+        </div>
+        <div id="programs-list" class="programs-list">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <div id="badge-toast" class="badge-toast hidden">
+        <span class="toast-emoji">⭐</span>
+        <span class="toast-text">Subject Complete! You're a LabSync Legend!</span>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
