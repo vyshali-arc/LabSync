@@ -125,6 +125,118 @@
         ],
         "lastUpdated": "2026-03-24T13:06:49.259Z"
       }
+    },
+    "monika": {
+      "OS": {
+        "completedPrograms": [
+          "CPU Scheduling – FCFS",
+          "CPU Scheduling – SJF",
+          "CPU Scheduling – Round Robin",
+          "CPU Scheduling – Priority",
+          "Banker's Algorithm (Deadlock Avoidance)",
+          "Deadlock Detection",
+          "Page Replacement – FIFO",
+          "Page Replacement – LRU",
+          "Page Replacement – Optimal",
+          "Disk Scheduling – FCFS",
+          "Disk Scheduling – SSTF",
+          "Disk Scheduling – SCAN"
+        ],
+        "lastUpdated": "2026-03-24T13:34:45.319Z"
+      },
+      "ADSAA": {
+        "completedPrograms": [
+          "Binary Search",
+          "Bubble Sort",
+          "Selection Sort",
+          "Insertion Sort",
+          "Merge Sort",
+          "Quick Sort",
+          "Heap Sort",
+          "Binary Search Tree (Insert, Delete, Search)",
+          "AVL Tree",
+          "Graph – BFS",
+          "Graph – DFS",
+          "Dijkstra's Algorithm",
+          "Kruskal's Algorithm",
+          "Prim's Algorithm",
+          "Dynamic Programming – 0/1 Knapsack"
+        ],
+        "lastUpdated": "2026-03-24T13:34:50.664Z"
+      },
+      "FSD": {
+        "completedPrograms": [
+          "HTML – Personal Portfolio Page",
+          "CSS – Responsive Navbar",
+          "JavaScript – DOM Manipulation",
+          "JavaScript – Form Validation",
+          "Node.js – Basic HTTP Server",
+          "Express.js – RESTful API",
+          "MongoDB – CRUD Operations",
+          "React – Functional Components",
+          "React – State & Props",
+          "React – useEffect & Hooks",
+          "Full Stack – To-Do App",
+          "Full Stack – Auth System"
+        ],
+        "lastUpdated": "2026-03-24T13:34:38.538Z"
+      }
+    },
+    "sowmya rathod": {
+      "OS": {
+        "completedPrograms": [
+          "CPU Scheduling – FCFS",
+          "CPU Scheduling – SJF",
+          "CPU Scheduling – Round Robin",
+          "CPU Scheduling – Priority",
+          "Banker's Algorithm (Deadlock Avoidance)",
+          "Deadlock Detection",
+          "Page Replacement – FIFO",
+          "Page Replacement – LRU",
+          "Page Replacement – Optimal",
+          "Disk Scheduling – FCFS",
+          "Disk Scheduling – SSTF",
+          "Disk Scheduling – SCAN"
+        ],
+        "lastUpdated": "2026-03-24T13:41:48.738Z"
+      },
+      "ADSAA": {
+        "completedPrograms": [
+          "Binary Search",
+          "Bubble Sort",
+          "Selection Sort",
+          "Insertion Sort",
+          "Merge Sort",
+          "Quick Sort",
+          "Heap Sort",
+          "Binary Search Tree (Insert, Delete, Search)",
+          "AVL Tree",
+          "Graph – BFS",
+          "Graph – DFS",
+          "Dijkstra's Algorithm",
+          "Kruskal's Algorithm",
+          "Prim's Algorithm",
+          "Dynamic Programming – 0/1 Knapsack"
+        ],
+        "lastUpdated": "2026-03-24T13:41:36.044Z"
+      },
+      "FSD": {
+        "completedPrograms": [
+          "HTML – Personal Portfolio Page",
+          "CSS – Responsive Navbar",
+          "JavaScript – DOM Manipulation",
+          "JavaScript – Form Validation",
+          "Node.js – Basic HTTP Server",
+          "Express.js – RESTful API",
+          "MongoDB – CRUD Operations",
+          "React – Functional Components",
+          "React – State & Props",
+          "React – useEffect & Hooks",
+          "Full Stack – To-Do App",
+          "Full Stack – Auth System"
+        ],
+        "lastUpdated": "2026-03-24T13:38:20.410Z"
+      }
     }
   }
 }
